@@ -4,6 +4,7 @@ import { useContext, useEffect } from "react";
 import UserContext from "./UserContext";
 export default function Users() {
   let usersAppend = useContext(UserContext);
+  console.log(usersAppend)
   let [list, setlist] = useState([]);
   useEffect(async () => {
     let user = await fetch(
